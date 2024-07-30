@@ -11,10 +11,12 @@
 // Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
 // Solution
-let i = 0;
 function makeNegative(num) {
-  if (num < 0) {
-    return i;
+  let i;
+  if ((i = -num)) {
+    console.log(i);
   }
+
+  return i;
 }
-makeNegative(3);
+makeNegative(1);
