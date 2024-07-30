@@ -13,10 +13,12 @@
 // Solution
 function makeNegative(num) {
   let i;
-  if ((i = -num)) {
-    console.log(i);
+  if (num > 0) {
+    i = -num;
+  } else {
+    i = num;
   }
-
+  console.log(i);
   return i;
 }
-makeNegative(1);
+makeNegative(-9);
