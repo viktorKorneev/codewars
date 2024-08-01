@@ -20,3 +20,24 @@ function basicOp(operation, value1, value2) {
     return result;
   }
   basicOp("*", 2, 3);
+
+  // --------------------------------------------------------------------
+
+  function basicOp(operation, value1, value2) {
+      let result;
+      if (operation === "+") {
+        result = value1 + value2;
+      } else if (operation === "-") {
+        result = value1 - value2;
+      } else if (operation === "*") {
+        result = value1 * value2;
+      } else {
+        result = value1 / value2;
+      }
+      console.log(result);
+      return result;
+    }
+    basicOp("-", 2, 3);
+
+    // ---------------------------------------------------------------------
+
