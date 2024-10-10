@@ -12,15 +12,12 @@
 // ❗Solutions
 
 function digitalRoot(n) {
-    let arr2 = [];
-    while (n > 9) {
-    let result = 0;
-    String(n).split("").forEach((el) => {
-        arr2.push(Number(el));
-        result += Number(el);
-      });
-    arr2 = [];
-    n = result
-    }
-    return n
+  while (n > 9) {
+  let result = 0;
+  String(n).split("").forEach((el) => {
+      result += Number(el);
+    });
+  n = result
   }
+  return n
+}
