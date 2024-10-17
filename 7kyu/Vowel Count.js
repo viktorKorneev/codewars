@@ -20,3 +20,18 @@ function getCount(str) {
     }
     return count;
   }
+
+  // ----------------------------------------------
+
+  function getCount(str) {
+    let count = 0;
+    const arr2 = ["a", "e", "i", "o", "u"];
+    let arr = str.split("");
+    for (let i = 0; i < arr.length; i++) {
+      if (arr2.includes(arr[i])) {
+        count++;
+      }
+    }
+  
+    return count;
+  }
