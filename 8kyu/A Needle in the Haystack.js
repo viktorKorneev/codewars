@@ -24,6 +24,6 @@ function findNeedle(haystack) {
       "some random junk",
       "a piece of hay",
       "needle",
-      "something somebody lost a while ago",
+      "something somebody lost a whidfle ago",
     ])
   );
