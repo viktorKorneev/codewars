@@ -16,18 +16,20 @@
 function stalinSort(array) {
 
   if (array.length === 0) {
-    return array;
+    return;
   }
 
-  const newArr = [array[0]];
+  const newArr = [];
+
+  newArr.unshift(array[0]);
 
   for (let i = 1; i < array.length; i++) {
+
     if (newArr[newArr.length - 1] <= array[i]) {
       newArr.push(array[i]);
     }
+
   }
 
   array.splice(0, array.length, ...newArr);
-
-  return array;
 }
